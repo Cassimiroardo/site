@@ -65,26 +65,29 @@ p {
 
 .container {
     margin: 0px auto 0 auto;
-    width: 100%;
+    width: 75%;
     max-width: 1200px;
 }
+
+.nav {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav a{
+    margin-right: 47px;
+}
+
 
 @media(max-width: 800px) {
     .nav {
       flex-direction: column;
+      align-items: center;
     }
 
     .nav h3 {
         margin: 10px 0 10px 0;
     }
-  }
-
-  .nav {
-    display: flex;
-    max-width: 800px;
-  }
-  
-  .nav h3 {
-    width: 100%;
-    text-align: center;
   }
