@@ -65,8 +65,8 @@ p {
 
 .container {
     margin: 0px auto 0 auto;
-    width: 75%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 850px;
 }
 
 .nav {
@@ -87,7 +87,7 @@ p {
       align-items: center;
     }
 
-    .nav h3 {
+    .nav a {
         margin: 10px 0 10px 0;
     }
   }

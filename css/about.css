@@ -13,11 +13,11 @@
 
 .section-about .text{
     margin-right: 35px;
+    max-width: 465px;
 }
 
 .section-about .text h2{
-    width: 318px;
-    height: 84px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -27,8 +27,7 @@
 }
 
 .section-about .text p{
-    width: 465px;
-    height: 326px;  
+
     margin-top: 34px;
 
     font-family: Roboto;
