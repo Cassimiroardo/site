@@ -10,23 +10,30 @@
     <link rel="stylesheet" href="../css/about.css">
 </head>
 
+
 <body class="container">
     <section class="nav">
+
         <a href="home.html">
             <h3>Home</h3>
         </a>
+
         <a href="./about.html">
             <h3 style="color:var(--dark_green);font-weight: bold;">About</h3>
         </a>
+
         <a href="">
             <h3>Services</h3>
         </a>
+
         <a href="">
             <h3>Schedule</h3>
         </a>
+        
         <a href="./contact.html">
             <h3>Contact</h3>
         </a>
+
     </section>
 
     <section class="section-about">
@@ -42,17 +49,88 @@
     </section>
 
     <section class="section-gallery">
-        <div class="gallery-nav"></div>
+        <form class="gallery-nav" name="form_gallery">
+
+            <label class="radio-tab"> <img src="../assets/icons/tiny-speaker-inactive.svg" alt="caixa de som"> Ensaios
+                <input type="radio" name="gallery_nav" id="radio-tab1" checked></label>
+            <label class="radio-tab"> <img src="../assets/icons/tiny-play-circle-inactive.svg" alt="caixa de som">
+                Gravação <input type="radio" name="gallery_nav" id="radio-tab2"></label>
+            <label class="radio-tab"> <img src="../assets/icons/tiny-mic-inactive.svg" alt="caixa de som"> Locução
+                <input type="radio" name="gallery_nav" id="radio-tab3"></label>
+
+        </form>
         <div class="table">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src=""alt="">
-            <img src="" alt="">
+            <div class="tab1">
+                <div class="img-block"><img src="../assets/equipment-images/equip7.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip8.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip9.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip7.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip8.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip9.jpg" alt=""></div>
+            </div>
+
+            <div class="tab2">
+                <div class="img-block"><img src="../assets/equipment-images/equip1.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip8.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip9.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip7.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip8.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip9.jpg" alt=""></div>
+            </div>
+
+            <div class="tab3">
+                <div class="img-block"><img src="../assets/equipment-images/equip2.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip8.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip9.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip7.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip8.jpg" alt=""></div>
+                <div class="img-block"><img src="../assets/equipment-images/equip9.jpg" alt=""></div>
+            </div>
         </div>
     </section>
 
 </body>
+
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var rad = document.form_gallery.gallery_nav;
+        for (var i = 0; i < rad.length; i++) {
+
+            rad[i].onclick = function () {
+                qualquerFuncao(this);
+            }
+        };
+        function qualquerFuncao(e) {
+            console.log(e.id);
+            switch (e.id) {
+                case "radio-tab1":
+                    $(".section-gallery .table .tab2").css("display", "none")
+                    $(".section-gallery .table .tab3").css("display", "none")
+                    $(".section-gallery .table .tab1").css("display", "grid")
+                    $(".section-gallery .gallery-nav label:nth-child(1)").css("color", "black")
+                    $(".section-gallery .gallery-nav label:nth-child(2)").css("color", "var(--light_green)")
+                    $(".section-gallery .gallery-nav label:nth-child(3)").css("color", "var(--light_green)")
+                    break;
+                case "radio-tab2":
+                    $(".section-gallery .table .tab1").css("display", "none")
+                    $(".section-gallery .table .tab3").css("display", "none")
+                    $(".section-gallery .table .tab2").css("display", "grid")
+                    $(".section-gallery .gallery-nav label:nth-child(1)").css("color", "var(--light_green)")
+                    $(".section-gallery .gallery-nav label:nth-child(2)").css("color", "black")
+                    $(".section-gallery .gallery-nav label:nth-child(3)").css("color", "var(--light_green)")
+                    break;
+                case "radio-tab3":
+                    $(".section-gallery .table .tab1").css("display", "none")
+                    $(".section-gallery .table .tab2").css("display", "none")
+                    $(".section-gallery .table .tab3").css("display", "grid")
+                    $(".section-gallery .gallery-nav label:nth-child(1)").css("color", "var(--light_green)")
+                    $(".section-gallery .gallery-nav label:nth-child(2)").css("color", "var(--light_green)")
+                    $(".section-gallery .gallery-nav label:nth-child(3)").css("color", "black")
+                    break;
+            }
+        }
+    </script>
+</footer>
 
 </html>
