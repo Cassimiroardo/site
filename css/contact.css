@@ -1,23 +1,42 @@
 @media(max-width: 800px){
-    .media {
-        flex-direction:column;
-    }
-    .media a {
-        width:100%;
-        height:100%;
-    }
-    .media a img{
-        width:100%;
-        height:100%;
-    }
 
-    .mapBox{
+    .mapBox {
+        display: block;
+        width:100%;
+        height:100%;
+        left:0px;
+    }
+    .map {
+        display:block;
+        width: 100%;
+        height:40%;
+        left:0;
+    }
+    .mediaBox{
+        padding-top:5%;
+        align-items:center;
+    }
+    .media {
+        align-items:center;
+    }
+    .mediaBox h2{
+        text-align:center; 
+
+    }
+    .info h2{
+        text-align:center;
+    }
+    
+    .info{
+        flex-direction:column;
+        align-items:center;
+
     }
 
     .contactWrapper {
         flex-direction:column;
+        align-items:center;
     }
-
 }
 .info ul li {
     padding-top: 10px;
@@ -27,14 +46,6 @@
 
 .info ul li b {
     color: black;
-}
-.mapBox {
-    padding-top: 30px;
-    height:90%;
-}
-.map {
-    width:100%;
-    height:100%;
 }
 
 .contactWrapper {
@@ -59,14 +70,13 @@
     display:flex;
     height: 100%;
     width:100%;
-
-
 }
 .media a {
-    width:15%;
+    width:100%;
     height:100%;
 }
 .media a img {
+    background-color: var(--gray);
     padding:5% 10%;
     margin: 5%;
     width:100%;
@@ -81,6 +91,26 @@
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
+
+
+.map {
+    display: block;
+    width: 100VW;
+    height:50VH;
+    left:0px;
+}
+
+#mapSection{
+    width:100%;
+    height:100%;
+}
+
+#infoSection{
+    width:100%;
+    height:100%;
+}
+
+
 
 @keyframes mouseExit {
     from{
@@ -103,9 +133,4 @@
     }
 }
 
-section {
-    width:100VW;
-    height:50VH;
-
-}
 
