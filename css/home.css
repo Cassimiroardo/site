@@ -1,8 +1,15 @@
 /* COMMUN SECTION */
 
+@media(max-width: 720px) {
+    .section-schedule, .section-welcome {
+        text-align: center;
+    }
+}
+
 .section-schedule,
 .section-welcome {
     display: flex;
+    justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 44px;
 }
@@ -21,20 +28,14 @@
 
 .section-schedule .text h2,
 .section-welcome .text h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 60px;
-    line-height: 84px;
+    font-size: 3rem;
     color: var(--title);
 }
 
 .section-schedule .text p,
 .section-welcome .text p {
     margin-top: 34px;
-    font-family: Roboto;
-    font-style: normal;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .section-schedule .image,
@@ -47,10 +48,6 @@
 
 .section-welcome{
     flex-direction: row;
-}
-
-.section-welcome .text{
-    margin-right: 35px;
 }
 
 /* SEGUNDA SECTION */
@@ -68,7 +65,7 @@
 .section-schedule .text .box-button{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -79,10 +76,8 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 190px;
-    font-size: 24px;
-    line-height: 28px;
-    border: 1px solid var(--dark_green);
+    width: 40%;
+    border: 0.8px solid var(--dark_green);
     color: var(--dark_green);
     border-radius: 50px;
 }

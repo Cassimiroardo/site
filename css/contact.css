@@ -1,5 +1,4 @@
 @media(max-width: 800px){
-
     .mapBox {
         display: block;
         width:100%;
@@ -12,32 +11,53 @@
         height:40%;
         left:0;
     }
-    .mediaBox{
+    .mediaBox {
+        display: flex;
+        flex-direction: column;
         padding-top:5%;
+        justify-content: center;
         align-items:center;
+    }
+    .mediaBox strong{
+        text-align:center;
     }
     .media {
         align-items:center;
+        max-width: none;
+        justify-content: center;
     }
-    .mediaBox h2{
-        text-align:center; 
-
-    }
-    .info h2{
+    .info strong{
         text-align:center;
     }
-    
     .info{
+        display: flex;
+        flex-direction: column;
         flex-direction:column;
         align-items:center;
-
+        margin-bottom: 50px;
     }
-
     .contactWrapper {
         flex-direction:column;
         align-items:center;
     }
+
+    .info ul li {
+        text-align: center;
+    }
 }
+
+strong {
+    width: 100%;
+    font-weight: bold;
+    line-height: 28px;
+    color: var(--title);
+}
+
+strong.head {
+    font-weight: normal;
+    font-size: 24px;
+}
+
 .info ul li {
     padding-top: 10px;
     color: var(--text);
@@ -57,7 +77,6 @@
 .info {
     height: 100%;
     width: 100%;
-
 }
 
 .mediaBox {
@@ -67,30 +86,29 @@
 
 .media{
     display:flex;
+    flex-wrap: wrap;
     height: 100%;
     width:100%;
 }
 .media a {
-    width:100%;
-    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    background-color: #EBF0F0;
 }
+
+.media a:hover {
+    background: var(--dark_green);
+}
+
 .media a img {
-    background-color: var(--gray);
-    padding:30%;
-    margin: 5%;
-    width:100%;
-    height:100%;
-    animation-name: mouseExit;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
 }
-
-.media a img:hover{
-    animation-name: mousePass;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
 
 .map {
     display: block;
@@ -102,35 +120,12 @@
 #mapSection{
     width:100%;
     height:100%;
+    margin-bottom: 15px;
 }
 
 #infoSection{
+    margin-top: 50px;
     width:100%;
     height:100%;
     left:0px;
 }
-
-
-
-@keyframes mouseExit {
-    from{
-        filter: blur(5px);
-        background-color: var(--light_green)
-    }
-    to{
-        filter: blur(0);
-        background-color: white;
-    }
-}
-@keyframes mousePass {
-    from{
-        filter: blur(0);
-        background-color: white;
-    }
-    to{
-        filter: blur(5px);
-        background-color: var(--light_green)
-    }
-}
-
-

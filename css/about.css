@@ -1,5 +1,12 @@
 /* PRIMEIRA SECTION */
 
+@media(max-width: 720px) {
+    .section-about .text h2, .section-about .text p {
+        text-align: center;
+        padding: 0px 10px;
+    }
+}
+
 .section-about {
     display: flex;
     flex-direction: row;
@@ -19,19 +26,13 @@
 }
 
 .section-about .text h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 72px;
+    font-size: 3rem;
     line-height: 84px;
-    color: var(--title);
 }
 
 .section-about .text p {
     margin-top: 34px;
-    font-family: Roboto;
-    font-style: normal;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .section-about .image {
@@ -82,9 +83,6 @@
 
 .section-gallery .gallery-nav label {
     color: var(--light_green);
-    font-weight: 500;
-    font-size: 33px;
-    line-height: 28px;
     text-align: center;
 }
 
@@ -93,9 +91,15 @@
 }
 
 .section-gallery .gallery-nav .radio-tab {
+    display: flex;
     height: 100%;
     width: 211px;
-    border-bottom: solid var(--dark_green);
+    border-bottom: 2px solid var(--dark_green);
+}
+
+.section-gallery .gallery-nav .radio-tab h3 {
+    font-size: 1.8rem;
+    width: 100%;
 }
 
 .section-gallery .gallery-nav #radio-tab1, 
