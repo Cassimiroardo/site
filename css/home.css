@@ -1,0 +1,148 @@
+/* COMMUN SECTION */
+
+.section-schedule,
+.section-welcome {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 44px;
+}
+
+.section-schedule img,
+.section-welcome img {
+    width: 100%;
+    height: 100%;
+    line-height: 0px;
+}
+
+.section-schedule .text,
+.section-welcome .text {
+    max-width: 465px;
+}
+
+.section-schedule .text h2,
+.section-welcome .text h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 84px;
+    color: var(--title);
+}
+
+.section-schedule .text p,
+.section-welcome .text p {
+    margin-top: 34px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.section-schedule .image,
+.section-welcome .image {
+    width: 695px;
+    height: 472px;
+}
+
+/* PRIMEIRA SECTION */
+
+.section-welcome{
+    flex-direction: row;
+}
+
+.section-welcome .text{
+    margin-right: 35px;
+}
+
+/* SEGUNDA SECTION */
+
+.section-schedule{
+    flex-direction: row-reverse;
+}
+
+.section-schedule .text{
+    margin-left: 35px;
+}
+
+/* COMMUN BUTTON */
+
+.section-schedule .text .box-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.section-schedule .text .button-style-1,
+.section-schedule .text .button-style-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 190px;
+    font-size: 24px;
+    line-height: 28px;
+    border: 1px solid var(--dark_green);
+    color: var(--dark_green);
+    border-radius: 50px;
+}
+
+/* BUTTON'S SEGUNDA SECTION */
+
+.section-schedule .text .button-style-2{
+    background-color: var(--dark_green);
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 950px) {
+/* COMMUN SECTION */
+
+.section-schedule,
+.section-welcome {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-schedule .text,
+.section-welcome .text{
+    margin: 0 10px;
+    max-width: 100vw;
+}
+
+.section-schedule .text p,
+.section-welcome .text p{
+    width: 100%;
+    
+}
+
+.section-schedule .image,
+.section-welcome .image{
+    display: flex;
+    justify-content: center;
+}
+
+.section-schedule .image img,
+.section-welcome .image img{
+    width: 80%;
+}
+
+
+
+
+}
+
+@media(max-width: 950px) {
+    /* COMMUN BUTTON */
+
+.section-schedule .text .box-button{
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-schedule .text .box-button .button-style-2{
+    margin-top: 20px;
+}
+
+}    
