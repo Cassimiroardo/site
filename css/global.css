@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --background: #f2f3f5;
+    --background: #fff;
     --light_gray: #f1f1f1;
-    --gray: #DCDDE0;
     --text: #666;
     --title: #2E384D;
     --light_green: #B7E5CA;
@@ -44,6 +43,7 @@ button {
 }
 
 a {
+    cursor: pointer;
     color: inherit;
     text-decoration: none;
 }
@@ -67,7 +67,7 @@ p {
 .container {
     margin: 0px auto 0 auto;
     width: 100%;
-    max-width: 850px;
+    max-width: 1000px;
 }
 
 .nav {
