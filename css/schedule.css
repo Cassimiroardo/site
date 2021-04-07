@@ -1,0 +1,76 @@
+/* ESTILO DA TABELA */
+
+@media(max-width: 1000px) {
+    .table {
+      flex-direction: column;
+    }
+  }
+  
+  .table {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .table-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .table-item aside h4 {
+    color: var(--title);
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .table-item main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+    height: 60px;
+    width: 155px;
+    
+    margin: 5px;
+  }
+  
+  .occupied {
+    background-color: #ffba75;
+  }
+  
+  .free {
+    background-color: #B7E5CA;
+  }
+  
+  .band {
+    height: 65%;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .status {
+    height: 35%;
+    padding: 0px 5px ;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ESTILO DA SESSÃO FORMULÁRIO */
+
+  form {
+      background-color: var(--white);
+      width: 50%;
+  }
