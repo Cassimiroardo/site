@@ -35,7 +35,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, input, textarea, button, label {
+body, input, textarea, button, label, select {
     font: 400 1rem 'Roboto', sans-serif;
 }
 
@@ -72,7 +72,7 @@ p {
 }
 
 .nav {
-    margin: 40px 0;
+    padding: 40px 0;
     width: 100%;
     display: flex;
     justify-content: flex-start;
