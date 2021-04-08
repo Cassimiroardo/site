@@ -1,0 +1,143 @@
+/* RESPONSIVIDADE */
+
+@media(max-width: 1000px) {
+    .table {
+      flex-direction: column;
+    }
+    .table-item aside h4 {
+      text-align: center !important;
+    }
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .section-form {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .content {
+    height: 100%;
+  }
+  
+/* ESTILO DA TABELA */
+
+  .table {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .table-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 2.5px;
+  }
+
+  .table-item:first-child {
+    margin-left: 0px;
+  }
+
+  .table-item:last-child {
+    margin-right: 0px;
+  }
+  
+  .table-item aside h4 {
+    color: var(--title);
+    text-align: left;
+    font-weight: 700;
+  }
+  
+  .table-item main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+    height: 60px;
+    width: 100%;
+    max-width: 500px;
+
+    margin-bottom: 5px;
+  }
+  
+  .occupied {
+    background-color: #ffba75;
+  }
+  
+  .free {
+    background-color: #B7E5CA;
+  }
+  
+  .band {
+    height: 65%;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .status {
+    height: 35%;
+    padding: 0px 5px ;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ESTILO DA SESSÃO FORMULÁRIO */
+
+  form {
+      display: flex;
+      background-color: var(--white);
+      margin-top: 50px;
+      width: 100%;
+      max-width: 500px;
+      justify-content: space-between;
+  }
+
+  select, input, button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  select, button {
+    width: 25%;
+  }
+
+  input {
+    width: 48%;
+  }
+  
+  select, input {
+    background-color: var(--light_gray);
+  }
+
+  button {
+    background-color: var(--dark_green);
+    color: var(--white);
+    transition: filter 0.2s;
+  }
+
+  button:hover {
+    filter: brightness(0.9)
+  }
+
+  .section-form {
+    height: 100%;
+    width: 100%;
+  }
