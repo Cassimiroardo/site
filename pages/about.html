@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="../css/about.css">
 </head>
 
+<header class="container">
 
-<body class="container">
+    <input type="checkbox" name="mobile_nav" id="mobile-nav">
+    <label class="mobile-nav" for="mobile-nav">
+        <h3 class="open-nav-text">Abrir menu</h3>
+        <h3 class="close-nav-text">Fechar menu</h3>
+    </label>
+
     <section class="nav container">
 
         <a href="home.html">
@@ -29,13 +35,15 @@
         <a href="schedule.html">
             <h3>Agenda</h3>
         </a>
-        
+
         <a href="./contact.html">
             <h3>Contato</h3>
         </a>
 
     </section>
+</header>
 
+<body class="container">
     <section class="section-about">
         <div class="text">
             <h2>Sobre nós</h2>
@@ -45,23 +53,25 @@
                 sit amet dignissim et, malesuada ac mauris. Curabitur malesuada ullamcorper pharetra.</p>
         </div>
         <div class="image">
-            <img src="../assets/illustrations/walkin-man.svg"
-                 alt="Homem caminhando enquanto houve musica">
+            <img src="../assets/illustrations/walkin-man.svg" alt="Homem caminhando enquanto houve musica">
         </div>
     </section>
 
     <section class="section-gallery">
         <form class="gallery-nav" name="form_gallery">
 
-            <label class="radio-tab"> <img src="../assets/icons/tiny-speaker-inactive.svg" alt="caixa de som"> 
+            <label class="radio-tab"> <img src="../assets/icons/tiny-speaker-inactive.svg" alt="caixa de som">
                 <h3>Ensaios</h3>
-                <input type="radio" name="gallery_nav" id="radio-tab1" checked></label>
+                <input type="radio" name="gallery_nav" id="radio-tab1" checked>
+            </label>
             <label class="radio-tab"> <img src="../assets/icons/tiny-play-circle-inactive.svg" alt="caixa de som">
                 <h3>Gravação</h3>
-                <input type="radio" name="gallery_nav" id="radio-tab2"></label>
+                <input type="radio" name="gallery_nav" id="radio-tab2">
+            </label>
             <label class="radio-tab"> <img src="../assets/icons/tiny-mic-inactive.svg" alt="caixa de som">
                 <h3>Locução</h3>
-                <input type="radio" name="gallery_nav" id="radio-tab3"></label>
+                <input type="radio" name="gallery_nav" id="radio-tab3">
+            </label>
 
         </form>
         <div class="table">
