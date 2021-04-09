@@ -22,7 +22,7 @@
             <h3 style="color:var(--dark_green);font-weight: bold;">Sobre</h3>
         </a>
 
-        <a href="">
+        <a href="./services.html">
             <h3>Serviços</h3>
         </a>
 
@@ -98,44 +98,7 @@
 
 <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        var rad = document.form_gallery.gallery_nav;
-        for (var i = 0; i < rad.length; i++) {
-
-            rad[i].onclick = function () {
-                qualquerFuncao(this);
-            }
-        };
-        function qualquerFuncao(e) {
-            console.log(e.id);
-            switch (e.id) {
-                case "radio-tab1":
-                    $(".section-gallery .table .tab2").css("display", "none")
-                    $(".section-gallery .table .tab3").css("display", "none")
-                    $(".section-gallery .table .tab1").css("display", "grid")
-                    $(".section-gallery .gallery-nav label:nth-child(1)").css("color", "black")
-                    $(".section-gallery .gallery-nav label:nth-child(2)").css("color", "var(--light_green)")
-                    $(".section-gallery .gallery-nav label:nth-child(3)").css("color", "var(--light_green)")
-                    break;
-                case "radio-tab2":
-                    $(".section-gallery .table .tab1").css("display", "none")
-                    $(".section-gallery .table .tab3").css("display", "none")
-                    $(".section-gallery .table .tab2").css("display", "grid")
-                    $(".section-gallery .gallery-nav label:nth-child(1)").css("color", "var(--light_green)")
-                    $(".section-gallery .gallery-nav label:nth-child(2)").css("color", "black")
-                    $(".section-gallery .gallery-nav label:nth-child(3)").css("color", "var(--light_green)")
-                    break;
-                case "radio-tab3":
-                    $(".section-gallery .table .tab1").css("display", "none")
-                    $(".section-gallery .table .tab2").css("display", "none")
-                    $(".section-gallery .table .tab3").css("display", "grid")
-                    $(".section-gallery .gallery-nav label:nth-child(1)").css("color", "var(--light_green)")
-                    $(".section-gallery .gallery-nav label:nth-child(2)").css("color", "var(--light_green)")
-                    $(".section-gallery .gallery-nav label:nth-child(3)").css("color", "black")
-                    break;
-            }
-        }
-    </script>
+    <script src="../js/about-tabs.js"></script>
 </footer>
 
 </html>
